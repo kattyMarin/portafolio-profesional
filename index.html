@@ -3,94 +3,398 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Katty Marín</title>
+
+    <title>Portafolio | Katty Marín</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #263238;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #263238;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            background: white;
+            text-align: center;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            color: #263238;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #1976d2;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #1976d2;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e3e8ed;
+            padding-bottom: 10px;
+        }
+
+        .habilidades {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .habilidad {
+            background: #e3f2fd;
+            color: #1565c0;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .proyectos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .proyecto {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            background: #fafafa;
+        }
+
+        .proyecto h3 {
+            margin-bottom: 10px;
+            color: #263238;
+        }
+
+        .proyecto a {
+            display: inline-block;
+            margin-top: 15px;
+            background: #1976d2;
+            color: white;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+        }
+
+        .proyecto a:hover {
+            background: #0d47a1;
+        }
+
+        .caso {
+            border-left: 5px solid #1976d2;
+            padding-left: 20px;
+        }
+
+        .foda {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .foda div {
+            padding: 20px;
+            border-radius: 10px;
+            background: #f5f5f5;
+        }
+
+        .foda h3 {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #263238;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <h1>Portafolio de Katty Marín</h1>
+        <h1>Katty Marín</h1>
         <p>Estudiante de Analista en Programación</p>
+        <p>Desarrollo de software · Bases de datos · Desarrollo web</p>
     </header>
+
+    <nav>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#caso">Caso de estudio</a>
+        <a href="#foda">FODA</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 
     <main>
 
-        <section>
+        <section id="sobre-mi">
             <h2>Sobre mí</h2>
+
             <p>
-                Soy estudiante de Analista en Programación, interesada en el
+                me estoy capacitando, me interesada en el
                 desarrollo de software, bases de datos y nuevas tecnologías.
-                Me encuentro desarrollando mis conocimientos en programación
-                y desarrollo web.
+                Durante mi formación he desarrollado diferentes proyectos
+                utilizando herramientas de programación y desarrollo web.
+            </p>
+
+            <p>
+                Mi objetivo es continuar fortaleciendo mis conocimientos
+                técnicos y adquirir experiencia profesional en el área
+                tecnológica.
             </p>
         </section>
 
-        <section>
+
+        <section id="habilidades">
             <h2>Habilidades técnicas</h2>
-            <ul>
-                <li>Python</li>
-                <li>Django</li>
-                <li>SQL y bases de datos</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Git y GitHub</li>
-            </ul>
+
+            <div class="habilidades">
+                <span class="habilidad">Python</span>
+                <span class="habilidad">Django</span>
+                <span class="habilidad">SQL</span>
+                <span class="habilidad">Bases de datos</span>
+                <span class="habilidad">HTML</span>
+                <span class="habilidad">CSS</span>
+                <span class="habilidad">JavaScript</span>
+                <span class="habilidad">Git</span>
+                <span class="habilidad">GitHub</span>
+            </div>
         </section>
 
-        <section>
+
+        <section id="proyectos">
             <h2>Mis proyectos</h2>
 
-            <article>
-                <h3>Alke Wallet – HTML, CSS y JavaScript</h3>
-                <p>
-                    Proyecto de desarrollo web orientado a la gestión de una
-                    billetera digital.
-                </p>
-            </article>
+            <div class="proyectos">
 
-            <article>
-                <h3>Proyecto Python</h3>
-                <p>
-                    Proyecto desarrollado durante el bootcamp para aplicar
-                    conocimientos de programación en Python.
-                </p>
-            </article>
+                <article class="proyecto">
+                    <h3>Alke Wallet – HTML, CSS y JavaScript</h3>
 
-            <article>
-                <h3>Alke Wallet – Django</h3>
-                <p>
-                    Aplicación web desarrollada con Python y Django,
-                    utilizando modelos, formularios, base de datos,
-                    operaciones CRUD, autenticación y administración.
-                </p>
-            </article>
+                    <p>
+                        Proyecto de desarrollo web orientado a la gestión
+                        de una billetera digital.
+                    </p>
 
+                    <a href="#" target="_blank">
+                        Ver proyecto
+                    </a>
+                </article>
+
+
+                <article class="proyecto">
+                    <h3>Proyecto Python</h3>
+
+                    <p>
+                        Proyecto desarrollado durante el bootcamp para
+                        aplicar conocimientos de programación en Python.
+                    </p>
+
+                    <a href="https://github.com/kattyMarin/sence." target="_blank">
+    Ver proyecto
+</a>
+                </article>
+
+
+                <article class="proyecto">
+                    <h3>Alke Wallet – Django</h3>
+
+                    <p>
+                        Aplicación web desarrollada con Python y Django,
+                        utilizando modelos, formularios, base de datos,
+                        operaciones CRUD, autenticación y administración.
+                    </p>
+
+                    <a href="#" target="_blank">
+                        Ver proyecto
+                    </a>
+                </article>
+
+            </div>
         </section>
 
-        <section>
+
+        <section id="caso">
             <h2>Caso de estudio</h2>
 
-            <h3>Alke Wallet – Desarrollo Web con Django</h3>
+            <div class="caso">
 
-            <p>
-                Este proyecto representa uno de los trabajos más completos
-                desarrollados durante mi formación, ya que permitió integrar
-                programación, desarrollo web y manejo de bases de datos.
-            </p>
+                <h3>Alke Wallet – Desarrollo Web con Django</h3>
+
+                <br>
+
+                <h4>Descripción</h4>
+                <p>
+                    Alke Wallet es una aplicación web desarrollada con
+                    Python y Django para gestionar información relacionada
+                    con clientes, cuentas y transacciones.
+                </p>
+
+                <br>
+
+                <h4>Principal desafío</h4>
+                <p>
+                    Integrar diferentes componentes de Django, incluyendo
+                    modelos, formularios, vistas, autenticación,
+                    administración y consultas a la base de datos.
+                </p>
+
+                <br>
+
+                <h4>Solución propuesta</h4>
+                <p>
+                    Se desarrolló una aplicación utilizando Django,
+                    creando modelos y relaciones entre los datos,
+                    operaciones CRUD, formularios y funcionalidades
+                    para administrar la información.
+                </p>
+
+                <br>
+
+                <h4>Herramientas técnicas</h4>
+                <p>
+                    Python, Django, SQL, HTML, CSS, base de datos y GitHub.
+                </p>
+
+                <br>
+
+                <h4>Principales aprendizajes</h4>
+                <p>
+                    Desarrollo web con Django, creación de modelos,
+                    relaciones entre datos, operaciones CRUD,
+                    formularios, autenticación, Django Admin y consultas
+                    a bases de datos.
+                </p>
+
+            </div>
         </section>
 
-        <section>
+
+        <section id="foda">
+            <h2>FODA personal</h2>
+
+            <div class="foda">
+
+                <div>
+                    <h3>Fortalezas</h3>
+                    <ul>
+                        <li>Capacidad de aprendizaje.</li>
+                        <li>Programación en Python.</li>
+                        <li>Conocimientos de SQL.</li>
+                        <li>Desarrollo con Django.</li>
+                        <li>Perseverancia.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Oportunidades</h3>
+                    <ul>
+                        <li>Continuar estudiando programación.</li>
+                        <li>Especializarme en ciberseguridad.</li>
+                        <li>Mejorar mi portafolio.</li>
+                        <li>Realizar certificaciones.</li>
+                        <li>Buscar oportunidades laborales.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Debilidades</h3>
+                    <ul>
+                        <li>Seguir fortaleciendo programación.</li>
+                        <li>Poca experiencia laboral tecnológica.</li>
+                        <li>Mejorar inglés técnico.</li>
+                        <li>Practicar proyectos independientes.</li>
+                        <li>Profundizar conocimientos Cloud.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Amenazas</h3>
+                    <ul>
+                        <li>Alta competencia en puestos junior.</li>
+                        <li>Cambios tecnológicos constantes.</li>
+                        <li>Mayores requisitos técnicos.</li>
+                        <li>Nuevas herramientas constantemente.</li>
+                        <li>Falta de experiencia profesional.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="contacto">
             <h2>Contacto</h2>
+
             <p>
-                GitHub: kattyMarin
+                <strong>GitHub:</strong> KattyMarin
+            </p>
+
+            <p>
+                Mi portafolio reúne proyectos desarrollados durante curso
             </p>
         </section>
 
     </main>
 
+
     <footer>
         <p>Portafolio profesional – Katty Marín</p>
+        
     </footer>
 
 </body>
